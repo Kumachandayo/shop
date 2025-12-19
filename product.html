@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Kuma | ウールブレンド クルーネックニット</title>
+
+<!-- 高級感フォント -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --text-main: #111111;
+  --text-sub:  #666666;
+  --border:    #e5e5e5;
+  --bg-main:   #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.8;
+}
+
+/* ===== ブランドヘッダー ===== */
+.brand-header {
+  text-align: center;
+  padding: 48px 16px 32px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-name {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+
+/* ===== コンテナ ===== */
+.container {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ===== 商品情報 ===== */
+.product {
+  padding: 40px 0;
+}
+
+.product-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.product-price {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* ===== 画像スライダー ===== */
+.slider {
+  margin: 32px 0;
+}
+
+.slides {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  border-radius: 4px;
+}
+
+/* ===== セクション ===== */
+.section {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.desc {
+  color: var(--text-sub);
+  font-size: 14px;
+}
+
+/* ===== テーブル ===== */
+.spec {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.spec th,
+.spec td {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.spec th {
+  color: var(--text-sub);
+  font-weight: 400;
+}
+
+/* ===== ボタン ===== */
+.buy-area {
+  padding: 48px 0;
+  text-align: center;
+}
+
+.buy-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+
+/* ===== フッター ===== */
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-sub);
+  padding: 32px 0 48px;
+}
+</style>
+</head>
+
+<body>
+
+<header class="brand-header">
+  <h1 class="brand-name">Kuma</h1>
+</header>
+
+<main class="container">
+
+  <section class="product">
+    <h2 class="product-title">
+      ウールブレンド クルーネックニット（ネイビー）
+    </h2>
+    <div class="product-price">¥5,000（税込）</div>
+
+    <!-- ★ 画像スライダー（ここは触らなくてOK） -->
+    <div class="slider">
+      <div class="slides">
+        <img src="knit-1.jpg" alt="ウールブレンド クルーネックニット 単体">
+        <img src="knit-2.jpg" alt="ウールブレンド クルーネックニット 着用イメージ">
+        <img src="knit-3.jpg" alt="ウールブレンド クルーネックニット カラーバリエーション">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3 class="section-title">商品説明</h3>
+    <p class="desc">
+      上質なウールブレンド素材を使用した、<br>
+      シンプルなクルーネックニット。<br><br>
+      程よい厚みで、1枚でもインナーとしても<br>
+      使いやすい仕上がりです。
+    </p>
+  </section>
+
+  <section class="section">
+    <h3 class="section-title">着用情報</h3>
+    <p class="desc">
+      モデル身長：175cm<br>
+      着用サイズ：M
+    </p>
+  </section>
+
+  <section class="section">
+    <h3 class="section-title">素材・仕様</h3>
+    <table class="spec">
+      <tr>
+        <th>素材</th>
+        <td>ウール50％ / ポリエステル50％</td>
+      </tr>
+      <tr>
+        <th>生産国</th>
+        <td>日本</td>
+      </tr>
+      <tr>
+        <th>伸縮性</th>
+        <td>あり</td>
+      </tr>
+      <tr>
+        <th>透け感</th>
+        <td>なし</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="buy-area">
+    <a href="#" class="buy-button">購入する</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © Kuma<br><br>
+  ※本ページは商品ページ制作のデモサンプルです。
+</footer>
+
+</body>
+</html>
